@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, Button, ImageBackground } from 'react-native';
-import { NativeBaseProvider, Box, Center, Icon, VStack } from 'native-base';
-import { FontAwesome } from '@expo/vector-icons';
+import { StyleSheet, Text, View, ImageBackground } from 'react-native';
+import { NativeBaseProvider} from 'native-base';
 
-const image = require('../../../assets/carro.png');
+const image = require('../../../assets/base.png');
 
-export default function Carrosd () {
+export default function Sqlite () {
  
   return (
     <NativeBaseProvider>
       <View style={styles.container}>
         <ImageBackground source={image} resizeMode="cover" style={styles.image}>
           <View style={styles.overlay}>
-            <Text style={styles.title}>Carros</Text>
+            <Text style={styles.title}>SQLite</Text>
           </View>
         </ImageBackground>
       </View>

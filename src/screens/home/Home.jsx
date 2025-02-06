@@ -112,7 +112,7 @@ export const Home = ({ navigation }) => {
           <MenuCard
             title="SQLITE"
             description="Esta pantalla nos servira para probar el mysqlite en el programa."
-            route="SQLite"
+            route="Sqlite"
             imageUrl="https://lh6.googleusercontent.com/proxy/Iw7S760QwEKoYRokvLPlTxw7c4_ZMgffPJEg6-Vn1x4UBRAnF7QfGFxVawnLkOcfTNTRQ2zLp-XDRvaVj0eUZkSY516hSwN18SXsEkfAZQs"
           />
         </VStack>

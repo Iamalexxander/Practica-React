@@ -8,6 +8,7 @@ import Calculadoraimc from './src/screens/calculadora-Imc/Calculadoraimc';
 import Futbolito from './src/screens/Fútbol/Futbolito';
 import Carrosd from './src/screens/carros/Carrosd';
 import { Consumoapi } from './src/screens/consumoAPI/Consumoapi';
+import Sqlite from './src/screens/sqlite/Sqlite';
 
 // Definimos el Tab Navigator
 const Tab = createBottomTabNavigator();
@@ -29,8 +30,8 @@ function RootTabs() {
             iconName = focused ? 'car' : 'car-outline';
           } else if (route.name ==='Consumo API'){
             iconName = focused ? 'navigate-circle' : 'navigate-circle-outline';
-          } else if (route.name ==='SQLite'){
-            iconName = focused ? 'cloud' : 'cloud-outline';
+          } else if (route.name ==='Sqlite'){
+            iconName = focused ? 'logo-firebase' : 'logo-firebase-outline';
           }
 
           return <Ionicons name={iconName} size={size} color={color} />;
@@ -47,7 +48,7 @@ function RootTabs() {
       <Tab.Screen name="Futbol" component={Futbolito} />
       <Tab.Screen name="Carros" component={Carrosd} />
       <Tab.Screen name='Consumo API' component={Consumoapi}/>
-      <Tab.Screen name='SQLite' component={Consumoapi}/>
+      <Tab.Screen name='Sqlite' component={Sqlite}/>
 
     </Tab.Navigator>
   );
